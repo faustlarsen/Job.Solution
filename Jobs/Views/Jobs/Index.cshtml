@@ -1,0 +1,18 @@
+@using JobOffer.Models;
+
+<h1>Job Offer</h1>
+
+<ul>
+  @foreach(Job job in Model)
+  {
+    <li>@job.JobTitle</li>
+    <li>@job.Description</li>
+    <li>@job.Name</li>
+    <li>@job.Phone</li>
+    <br>
+  }
+</ul>
+<a href="/jobs/new">Add another job</a> <br>
+<a href="/">Go home</a>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+<link rel="stylesheet" href="~/css/styles.css">

@@ -1,0 +1,23 @@
+<body>
+<head>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+    <link rel="stylesheet"  href="~/css/styles.css" type="text/css">
+</head>
+  <h1>Post a job offer</h1>
+  <div class="forms">
+    <form action="/jobs" method="post">
+      <input id="jobtitle" class="form-control" name="jobtitle" placeholder="Enter a job title" type="text" required> 
+      <br>
+      <input id="description" class="form-control" name="description" type="text" placeholder="Description" required>
+      <br>
+      <input id="name" class="form-control" name="name" type="text" placeholder="Name" required>
+      <br>
+      <input id="phone" class="form-control" name="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+      <br>
+      <button type="submit">Submit</button>
+    </form>
+    <a href="/">Homepage</a>
+    <br>
+    <a href='/jobs'>List of jobs</a>
+  </div>
+</body>
